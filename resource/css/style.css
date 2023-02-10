@@ -1,0 +1,573 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #fff;
+    color:#2c2c2c;
+    font-family:"lato" ,"Arial", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+            /*--------------***** Header Section START*****--------*/
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.70)),url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+h1,h2,h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom:15px; 
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2{
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color:#d98108;
+    content:" ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top:30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+a:link,
+a:visited{
+    color:#d98108;
+    text-decoration: none;
+    border-bottom: 1px solid #d98108;
+    padding-bottom: 1px;
+    transition: color 0.2s,border-bottom 0.2s;
+
+}
+a:hover,
+a:active{
+    color:#2c2c2c;
+    border-bottom:1px solid transparent;
+    
+
+}
+
+
+.header-text {
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 1140px;
+    transform: translate(-50%,-50%);
+}
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display:inline-block;
+    padding:10px 30px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background-color 0.2s,color 0.2s,border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color:#d98108;
+    border:1px solid #d98108;
+    color:#fff;
+    margin-right: 10px;
+}
+
+.btn-border:link,
+.btn-border:visited{
+    border:1px solid #d98108;
+    color:#d98108;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #8d5406;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border:1px solid #8d5406;
+}
+
+.btn-border:hover,
+.btn-border:active{
+    color:#fff;
+    border:1px solid #8d5406;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 15px;
+}
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    margin: 5px 0;
+    float: left;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin-top: 50px;
+}
+
+.main-nav li{
+    display:inline-block;
+    margin-left: 40px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    color:#fff;
+    text-decoration: none;
+    padding:8px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #d98108;
+}
+
+        /*--------------***** Header Section END*****--------*/
+
+       /*--------------***** Features Section START*****--------*/
+section{
+    padding:80px 0;
+}
+
+
+.feature-text {
+    width:70%;
+    margin-left: 15%;
+    line-height: 1.45;
+}
+
+.box{
+    padding:1%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 1.45;
+    text-align: justify;
+}
+.icon-big{
+    font-size:240%;
+    color:#d98108;
+}
+          /*--------------***** Features Section END*****--------*/
+
+          /*--------------***** Favourite Meals Section START*****--------*/
+.section-meals{
+    padding:0;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    width:25%;
+    float: left;
+}
+
+.meals-photo{
+    width: 100%;
+    margin:0;
+    overflow: hidden;
+    background-color: #000;
+    
+}
+
+.meals-photo img{
+    width:100%;
+    height:auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+    opacity: 0.7;
+}
+
+.meals-photo img:hover{
+    transform: scale(1.04);
+    opacity: 1;
+}
+          /*--------------***** Favourite Meals Section END*****--------*/
+
+          /*--------------***** App Use  Section START*****--------*/
+.phone-image {
+    width:40%;
+}
+.app-btn:link,
+.app-btn:visited{
+    border: 0;
+}
+.app-btn img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+.step-box:first-child{
+    text-align: right;
+    padding-right:3%;
+    margin-top: 30px;
+}
+.step-box:last-child{
+    padding-left:3%;
+    margin-top: 60px;
+}
+.work-steps div{
+    color:#d98108;
+    border:1px solid #d98108;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 150%;
+    padding:5px;
+    float: left;
+    margin-right: 10px;
+}
+.work-steps {
+    margin-bottom: 50px;
+}
+.work-steps:last-of-type{
+    margin-bottom: 80px;
+}
+.clearfix{
+    zoom:1;
+    }
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.section-steps {
+    background-color: #f5f5f5;
+}
+
+             /*--------------***** App Use  Section END*****--------*/
+
+             /*--------------***** Cities Section START*****--------*/
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-features {
+    margin-bottom: 10px;
+}
+.icon-small{
+    color:#d98108;
+    font-size: 120%;
+    vertical-align: middle;
+
+}
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)),url(img/back-customers.jpg);
+    color:#fff;
+    background-size: cover;
+    background-attachment: fixed;
+}
+blockquote{
+    font-style: italic;
+    padding:2%;
+    text-align: justify;
+    line-height: 145%;
+    position:relative;
+}
+blockquote:before{
+    content: "\201C";
+    font-size: 450%;
+    display: block;
+    position: absolute;
+    top:5px;
+    left:-5px;
+}
+cite{
+    display: block;
+    margin-top:15px;
+    font-size: 90%;
+}
+cite img{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+
+}
+          /*--------------***** Cities Section END*****--------*/
+
+           /*--------------***** Price Plans Section START*****--------*/
+
+.section-plans{
+    background-color: #f5f5f5;
+    
+}
+
+.plan-box{
+    background-color: #fff;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 7px;
+    box-shadow:10px 10px 10px #676767;
+}
+
+.plan-box div{
+    border-bottom: 1px solid #cccccc;
+    padding: 15px;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.price-month{
+    font-size: 300%;
+    font-weight: 100;
+    color:#d98108;
+    margin-bottom: 10px;
+}
+
+.price-month span{
+    font-size: 30%;
+    font-weight: 300;
+    
+}
+
+.price-meal{
+    font-size: 90%;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+       /*--------------***** Price Plans Section END*****--------*/
+
+       /*--------------***** Form Section START*****--------*/
+
+.contact-form{
+    width: 60%;
+    margin:0 auto;
+}
+
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    border: 1px solid #bebebe;
+    padding: 7px;
+}
+
+textarea{
+    height: 100px;
+}
+
+*:focus{
+    outline: none;
+}
+       /*--------------***** Form Section END*****--------*/
+
+       /*--------------***** Footer Section START*****--------*/
+
+footer{
+    background-color:#6c6c6c;
+    padding:30px;
+    font-size: 90%;
+}
+.footer-nav{
+        list-style: none;
+        float: left;
+}
+.social-nav{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-nav li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.footer-nav li a,
+.social-nav li a{
+    text-decoration: none;
+    border: 0;
+    color:#eaeaea;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#fff;
+}
+.ion-social-facebook:hover,
+.ion-social-facebook:active{
+    color:#3b5998; 
+}
+.ion-social-twitter:hover,
+.ion-social-twitter:active{
+    color:#00acee ;
+}
+.ion-social-googleplus:hover,
+.ion-social-googleplus:active{
+    color:#db4a39 ;
+}
+.ion-social-instagram:hover,
+.ion-social-instagram:active{
+    color:#f09433 ;
+}
+footer p{
+    color:#eaeaea;
+    text-align: center;
+    margin-top: 20px;
+}
+        /*--------------***** Footer Section END*****--------*/
+
+        /*--------------***** Header Section ke liye Navbar sticky START*****--------*/
+
+.sticky{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color:rgba(255, 255, 255, 0.98);
+    width: 100%;
+    box-shadow: 0 2px 2px #ededed;
+    z-index: 9999;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited
+{
+    color:#2c2c2c;
+    padding:20px 0;
+}
+.sticky .logo{
+    display: none;
+}
+.sticky .logo-black{
+    display: block;
+}
+.sticky .main-nav{
+    margin-top:15px;
+}
+           /*--------------***** Header Section ke liye Navbar sticky END*****--------*/
+
+           /*------*****  Features,App Use,Cities,Price Plans Section Animation START*****-----*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4{
+      opacity: 0;
+      animation-duration:2s;
+}
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+.js--wp-4.animated{
+      opacity: 1;
+}
+           /*------*****  Features,App Use,Cities,Price Plans Section Animation END*****-----*/
+
+/****Start Price Plans section swing-effect****/
+.swing-effect {
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.swing-effect:hover {
+  animation: swing 1s ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+  15% {
+    transform: translateX(15px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(13px);
+  }
+  65% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+ /*****END Price Plans section swing-effect*****/
+
+/*Start App Use section img Grow-effect*/
+.grow-effect {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.grow-effect:hover {
+  transform: scale(1.1);
+}
+/*END App Use section img Grow-effect*/
+
+
+
+
+
+
+
